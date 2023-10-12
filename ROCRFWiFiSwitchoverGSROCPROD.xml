@@ -1,0 +1,45 @@
+﻿<wap-provisioningdoc>
+  <characteristic version="9.1" type="Wi-Fi">
+    <parm name="UseRegulatory" value="0" />
+    <parm name="UseDiagnosticOptions" value="0" />
+    <parm name="UseAdvancedOptions" value="0" />
+    <parm name="NetworkAction" value="RemoveAll" />
+    <parm name="UseHotspotOptions" value="0" />
+  </characteristic>
+  <characteristic version="9.1" type="Wi-Fi">
+    <characteristic type="System">
+      <parm name="WiFiAction" value="enable" />
+      <parm name="WifiWakeup" value="1" />
+    </characteristic>
+    <parm name="UseRegulatory" value="0" />
+    <parm name="UseDiagnosticOptions" value="0" />
+    <parm name="UseAdvancedOptions" value="1" />
+    <characteristic type="AdvancedOptions">
+      <parm name="AutoTimeConfiguration" value="1" />
+    </characteristic>
+    <parm name="NetworkAction" value="Add" />
+    <characteristic type="network-profile">
+      <parm name="SSID" value="GS_ROC_PROD" />
+      <parm name="SecurityMode" value="1" />
+      <parm name="WPAMode" value="1" />
+      <characteristic type="key-details">
+        <parm name="KeyType" value="Passphrase" />
+        <parm name="ProtectKey" value="0" />
+        <parm name="PassphraseWPAClear" value="GME$Refurb123" />
+      </characteristic>
+      <parm name="UseDHCP" value="1" />
+      <parm name="UseProxy" value="0" />
+    </characteristic>
+    <parm name="UseHotspotOptions" value="0" />
+  </characteristic>
+  <characteristic version="9.1" type="Wi-Fi">
+    <parm name="UseRegulatory" value="0" />
+    <parm name="UseDiagnosticOptions" value="0" />
+    <parm name="UseAdvancedOptions" value="0" />
+    <parm name="NetworkAction" value="Connect" />
+    <characteristic type="network-profile">
+      <parm name="SSID" value="GS_ROC_PROD" />
+    </characteristic>
+    <parm name="UseHotspotOptions" value="0" />
+  </characteristic>
+</wap-provisioningdoc>
